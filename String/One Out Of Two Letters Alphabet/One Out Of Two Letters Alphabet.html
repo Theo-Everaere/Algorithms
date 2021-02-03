@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #4b4b4b;
+        }
+    </style>
+    <title>One Out Of Two Letters - Alphabet</title>
+</head>
+
+<script>
+
+// Retourne une lettre sur 2 de l'alphabet en majuscule = aBcDeFgHiJkL........
+
+  let alphabet = "abcdefghijklmnopqrstuvwxyz";
+  let i = 0;
+  let j = 1;
+  let uneMajSurDeux = " ";
+  while(i < alphabet.length && j < alphabet.length){
+    uneMajSurDeux = uneMajSurDeux + alphabet[i].toUpperCase() + alphabet[j]
+    i=i+2
+    j+=2
+    }
+  uneMajSurDeux = uneMajSurDeux 
+  console.log(uneMajSurDeux)
+
+</script>
+
+<body>
+
+</body>
+
+</html>

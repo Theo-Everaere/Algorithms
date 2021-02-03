@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background-color: #4b4b4b;
+        }
+    </style>
+    <title>Remove Duplicates</title>
+</head>
+<script>
+    // Prendre deux chaînes et afficher, sans double, les caractères qui apparaissent dans l'une ou l'autre des chaînes.
+
+    // Méthode 1 ----------------------------------------------------------------------------------------------------XXX
+    fStr = "Avez-vous déjà vu un ver allant vers un verre en verre vert à l'envers?"
+    sStr = "Quarante carottes crues croient que croquer crée des crampes."
+    tStr = ""
+    tStr = tStr + fStr + sStr
+
+    function double(tStr) {
+        result = ""
+        for (let i = 0; i < tStr.length; i++) {
+            if (!result.includes(tStr[i])) {
+                result = result + tStr[i]
+            }
+        }
+        return result
+    }
+    console.log(double(tStr))
+
+    // Méthode 2 ----------------------------------------------------------------------------------------------------XXX
+
+    function quiNeDoublePasLesCaracteres(str1, str2) {
+        let fusionStr = str1 + str2
+        let str3 = ""
+        str3 += fusionStr[0]
+
+        for (let i = 0; i < fusionStr.length; i++) {
+            let egalite = false;
+            for (let j = 0; j < str3.length; j++) {
+                if (fusionStr[i] === str3[j]) {
+                    egalite = true;
+                }
+            }
+            if (egalite == false) {
+                str3 += fusionStr[i] // str3 = str3 + fusionStr[i]
+            }
+        }
+        console.log("Les strings '", str1, "' et' ", str2, "' deviennent :", str3)
+    }
+    quiNeDoublePasLesCaracteres('Rien ici', 'et Rien là')
+
+    // Méthode 3 ----------------------------------------------------------------------------------------------------XXX
+
+    const str = "coucou"
+    function removeDuplicates(str) {
+        // Used as index in the modified string
+        let n = str.length
+        // Traverse through all characters
+        let res = ''
+        let a
+        for (a = 0; a < n; a++) {
+            // Check if str[i] is present before it
+            let j
+            for (j = a + 1; j < n; j++) {
+                if (str[a] == str[j]) break
+            }
+            // If not present, then add it to result.
+            if (j == n) {
+                res = res + str[a]
+            }
+        }
+        return res
+    }
+    console.log(removeDuplicates(str))
+
+
+
+
+
+
+</script>
+
+<body>
+</body>
+
+</html>

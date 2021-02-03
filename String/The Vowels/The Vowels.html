@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #4b4b4b;
+        }
+    </style>
+    <title>The Vowels</title>
+</head>
+
+<script>
+
+    // Écrire une fonction qui prend en paramètre une phrase ou un mot et qui renvoies le nombre de voyelles.
+
+    // Méthode 1 ---------------------------------------------------------------------------------------------XX
+
+    const str = 'il y a une phrase ici'
+    const voyelle_list = 'aeiouyAEIOUY'
+    let cpt = 0
+    for (let i = 0; i < str.length; i++) {
+        if (voyelle_list.indexOf(str[i]) !== -1) {
+            cpt += 1
+        }
+    }
+    console.log('Il y a ' + cpt + ' voyelle(s) dans cette phrase !')
+
+
+    // Méthode 2 ---------------------------------------------------------------------------------------------XX
+/*
+    // Technique Regex
+    let vowel = function (str) {
+        let matches = str.match(/[aeiouy]/g)
+        let count = matches ? matches.length : 0;
+
+        document.getElementById('p').innerHTML = str + " contient " + count + " voyelle(s)";
+        return false;
+    };
+*/
+</script>
+
+<body>
+
+</body>
+
+</html>

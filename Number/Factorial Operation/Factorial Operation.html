@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #4b4b4b;
+        }
+    </style>
+    <title>Factorial Operation</title>
+</head>
+
+<script>
+    // Écrire une fonction itérative qui renvoie un nombre. Ce nombre est le résultat de l’opération factorielle à partir du nombre passé en paramètre.
+
+    // Méthode 1 ---------------------------------------------------------------------------------------------XX
+    // Fonction Itérative.
+    function factorialIterative(nbr) {
+        let res = 1
+        let i = 1
+        for (let i = 1; i <= nbr; i++)
+            res = res * i;
+        return res;
+        console.log(res)
+    }
+    console.log('methode 1', factorialIterative(5))
+
+    // Méthode 2 ---------------------------------------------------------------------------------------------XX
+    // Fonction Récursive
+    function iterativeFactorial(nbr1) {
+        if (nbr1 < 0) return;
+        if (nbr1 < 2) return 1;
+        return nbr1 * iterativeFactorial(nbr1 - 1);
+    }
+    console.log('méthode 2', iterativeFactorial(2))
+
+</script>
+
+<body>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Palindrome</title>
+    <style>
+        body{
+            background-color: #2d3436;
+        }
+    </style>
+</head>
+<script>
+  // Écrire un algorithme qui confirme qu'un mot est un palindrome, ou non.
+
+  let entree = prompt("Veillez saisir votre mot").toLowerCase();
+  entree_1 = [...entree].reverse().join("");
+  console.log([...entree])
+  if (entree === "") {
+    console.log("Veuillez saisir un mot d'abord");
+  } else if (entree === entree_1) {
+    console.log(entree + " est un palindrome");
+  } else {
+    console.log(entree + " n'est pas un palindrome");
+  }
+
+
+</script>
+<body>
+
+    
+</body>
+</html>

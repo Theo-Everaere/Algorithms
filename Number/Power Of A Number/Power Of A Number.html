@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #4b4b4b;
+        }
+    </style>
+    <title>Power Of A Number</title>
+</head>
+
+<script>
+    // Écrire une fonction itérative qui renvoie une puissance d’un nombre.
+    // Une puissance inferieur à 0 renverra 0.
+
+    function power(nbr, puissance) {
+
+        // Méthode 1 ---------------------------------------------------------------------------------------------XX
+
+        // let res = nbr ** puissance
+
+        // Méthode 2 ---------------------------------------------------------------------------------------------XX
+
+        let res = 1
+        for (let i = 0; i < puissance; i++) {
+            res = res * nbr
+        }
+        console.log(res)
+    }
+    power(9, 3)
+
+
+
+</script>
+
+<body>
+
+</body>
+
+</html>

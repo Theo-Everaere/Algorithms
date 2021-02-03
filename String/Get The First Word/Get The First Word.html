@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #4b4b4b;
+        }
+    </style>
+    <title>Get The First Word</title>
+</head>
+
+<script>
+// Sortir le premier mot d'une chaîne de caractère.
+    let str = "       Ceci est un exemple."
+    let i = 0;
+    let firstWord = " ";
+    while (str[i] == " ") {
+        console.log("premier", str[i])
+        i++
+    }
+    while (str[i] !== " ") {
+        console.log("deuxièeme", str[i])
+        firstWord = firstWord + str[i]
+        i++
+    }
+    console.log("Le premier mot de cette phrase est" + firstWord)
+
+</script>
+
+<body>
+
+</body>
+
+</html>

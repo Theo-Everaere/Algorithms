@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #4b4b4b;
+        }
+    </style>
+    <title>Square Root</title>
+</head>
+
+<script>
+
+    // Écrire une fonction qui renvoie la racine carrée entière d’un nombre si elle existe, 0 si la racine carrée n’est pas entière.
+
+    function squareRoot(nb) {
+        let res = 0
+        for (let i = 0; i < nb; i++) {
+            if (nb === i * i) {
+                res = i
+            }
+        }
+        console.log(res)
+    }
+    squareRoot(16)
+
+</script>
+
+<body>
+
+</body>
+
+</html>

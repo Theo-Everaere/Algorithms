@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      background-color: #4b4b4b;
+    }
+  </style>
+  <title>Prime Number Sup</title>
+</head>
+
+<script>
+
+  // Méthode 1 ---------------------------------------------------------------------------------------------XX
+
+  function nbrPremier(nbr) {
+    for (let i = 2; i < nbr; i++) {
+      if (nbr % i === 0) {
+        // console.log(nbr + " n'est pas un nombre premier !")
+        return false
+      }
+    }
+    // console.log(nbr + " est un nombre premier !")
+    return nbr !== 0
+  }
+  nbrPremier(3)
+
+  function NextPrimeNumber(prime) {
+    for (j = prime; ; ++j) {
+      if (nbrPremier(j)) {
+        break
+      }
+    }
+    console.log("le nombre premier supérieur est " + j)
+    return j
+  }
+  NextPrimeNumber(90)
+
+  // Méthode 2 ---------------------------------------------------------------------------------------------XX
+
+  function primeNext(nb) {
+    let estPremier = true;
+
+    for (i = 2; i < nb; i++) {
+      if (nb % i === 0) {
+        estPremier = false;
+
+        for (j = 2; j < nb; j++) {
+          if (nb % j === 0) {
+            nb++;
+          }
+        }
+      }
+    }
+    return nb;
+  }
+  console.log(primeNext(9));
+
+</script>
+
+<body></body>
+
+</html>

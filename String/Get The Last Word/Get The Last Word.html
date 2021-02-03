@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #4b4b4b;
+        }
+    </style>
+    <title>Get The Last Word</title>
+</head>
+
+<script>
+
+// Sortir le dernier mot d'une chaîne de caractère.
+
+  let otherString = "Dans cet exemple.     ";
+  let i = 0;
+  lastWord = " ";
+  while (i < otherString.length- 1) {
+    i++
+  }
+  while (otherString[i] === " ") {
+    i--
+  }
+  while (otherString[i] !== " ") {
+    i--
+  }
+  i++
+  while (otherString[i] !== " ") {
+    lastWord = lastWord + otherString[i]
+    i++
+  }
+  console.log("Le dernier mot de cette phrase est" + lastWord)
+
+</script>
+
+<body>
+
+</body>
+
+</html>

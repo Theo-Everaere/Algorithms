@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #4b4b4b;
+        }
+    </style>
+    <title>Fibonacci Suite</title>
+</head>
+
+<script>
+    // Méthode 1 ---------------------------------------------------------------------------------------------XX
+
+    
+    // function fibo(nbr){
+    //     let n1 = 0;
+    //     let n2 = 1;
+    //     let res = 0
+    //     for(let i = 1; i <= nbr; i++){
+    //         res = n1 + n2
+    //         console.log('resultat', res)
+    //         n1 = n2 
+    //         console.log('n1', n1)
+    //         n2 = res     
+    //     }
+    //     console.log(res)
+    //     return res
+    // }
+
+    // fibo(8) 
+    
+
+    // Méthode 2 ---------------------------------------------------------------------------------------------XX
+
+    function fibona(nbr1){
+        if (nbr1 < 2){
+            return nbr1
+        }
+        console.log('.', fibona(nbr1 -1))
+        // console.log('..', fibona(nbr1 -2))
+      
+        return fibona(nbr1-1) + fibona(nbr1-2)
+
+    }
+    console.log(fibona(8))
+
+
+</script>
+
+<body>
+
+</body>
+
+</html>

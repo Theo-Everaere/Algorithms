@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #4b4b4b;
+        }
+    </style>
+    <title>Capitalized Letters</title>
+</head>
+
+<script>
+// Écrire une fonction qui prend en paramètre une chaine de string et qui nous renvoie cette même chaine avec les premières lettres du mot en maj
+    const str = "Bonjour les nouveaux devs"
+    const array = str.split(' ')
+    const newArray = []
+
+    for (x = 0; x < array.length; x++) {
+        newArray.push(array[x].charAt(0).toUpperCase() + array[x].slice(1))
+    }
+    console.log("La fonction Capitalize:", newArray.join(' '))
+
+</script>
+
+<body>
+
+</body>
+
+</html>

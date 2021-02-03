@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #4b4b4b;
+        }
+    </style>
+    <title>The Longest Word - Array</title>
+</head>
+
+<script>
+
+    // Écrire une fonction qui prend en paramètre un tableau avec que des chaînes de caractère et sortir le mot le plus long.
+    let arr = ['bonjour', 'super', 'incroyable']
+    let word = "";
+    for (let i = 0; i < arr.length; i++) {
+        if (word.length < arr[i].length) {
+            word = arr[i];
+        }
+    }
+    console.log(word)
+    
+</script>
+
+<body>
+
+</body>
+
+</html>
